@@ -1,0 +1,10 @@
+<main class="container">
+  <div class="align-items-center">
+    <h2>User list</h2>
+    <ul class="list-group">
+      <li *ngFor="let user of users" class="list-group-item" [class.active]="user === selectedUser">
+        <a class="hand" (click)="onSelect(user)">{{user.name}}</a>
+      </li>
+    </ul>
+  </div>
+</main>
